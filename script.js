@@ -23,10 +23,11 @@ navigaters.forEach((navigater) => {
   dropdown.style.transition = "none";
 });
 
-let nDropdown = document.querySelectorAll(".item");
+let nDropdowns = document.querySelectorAll("#nDropdown")
 
-nDropdown.forEach((dropdown) => {
-  dropdown.addEventListener("click", function () {
-    this.classList.toggle("active");
-  })
+nDropdowns.forEach((navigater, index) => {
+  navigater.addEventListener("click", function () {
+    let lists = document.querySelectorAll(".list");
+    lists[index].classList.toggle("list-active");
+  });
 });
