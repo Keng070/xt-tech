@@ -32,3 +32,23 @@ nDropdowns.forEach((navigater, index) => {
   });
   
 });
+
+let menuBtn = document.querySelector("#menuBtn")
+let sideMenu  = document.querySelector(".side-menu")
+
+menuBtn.addEventListener("click", function(){
+  sideMenu.style.left="0"
+  sideMenu.style.position="fixed"
+  sideMenu.style.transition="0.2s"
+
+
+})
+function closeSideMenu(){
+  
+    sideMenu.style.left="-110%"
+    sideMenu.style.position="fixed"
+    sideMenu.style.transition="0.2s"
+  
+  
+ 
+}

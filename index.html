@@ -35,7 +35,11 @@
   </head>
   <body>
     <div class="side-menu">
-      <a href="/" class="logo">
+      <button class="close-sidebar"  style="position: absolute; right: 15px; top: 15px; font-size: 25px; cursor: pointer;" onclick="closeSideMenu()">
+         <i  class="fa-solid fa-xmark"></i>
+    
+      </button>
+       <a href="/" class="logo">
         <img src="/assets/photo/image 6.png" alt="" />
       </a>
       <div class="navigater-container">
@@ -888,7 +892,12 @@
         <!-- ///////// -->
       </div>
     </div>
-
+    <div class="mobile-menu">
+      <i id="menuBtn" class="fa-solid fa-bars"></i>
+      <a href="/">
+        <img src="/assets/photo/image 6.png" alt="">
+      </a>
+    </div>
     <div class="main-content">
       <nav>
         <div class="left">
@@ -951,11 +960,12 @@
       </nav>
 
       <div class="main-containter">
-        <div class="overview">
-          <p>ภาพรวม</p>
-        </div>
+       
         <div class="overview-content">
           <section class="content1">
+            <div class="overview" style="margin-bottom: 15px;">
+              <p>ภาพรวม</p>
+            </div>
             <div class="profit">
               <div class="refresh">
                 <i class="fa-solid fa-rotate"></i>
