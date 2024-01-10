@@ -30,4 +30,5 @@ nDropdowns.forEach((navigater, index) => {
     let lists = document.querySelectorAll(".list");
     lists[index].classList.toggle("list-active");
   });
+  
 });
